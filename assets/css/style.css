@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+/* :root{
+    --red:#E50914;
+    --black:#0000;
+    --light-color:#181818;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+} */
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-origin: padding-box;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+}
+body{
+    background-color: rgb(12, 12, 12);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(15, 15, 15);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    box-sizing:  0.5rem 1.5rem rgba(24, 22, 22, 0.1);
+}
+
+.btn{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: red;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+header .logo{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: red;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    padding: .5rem 1.5rem;
+    color: white;
+}
+
+header .navbar a:hover{
+    color: white;
+    background: red;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: white;
+    background: red;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-bottom: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    border-radius: 60%;
+    background: red;
+}   
+
+header .icons i:hover,
+header .icons a:hover{
+    color: red;
+    background: white;
+    transform: rotate(30deg);
+}
+
+header .icons #bars{
+    display: none;
+}
+
+.home{
+    padding:0;
+}
+
+.home .box{
+    min-height: 100vh;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content:flex-end;
+    padding:2rem 9%;
+}
+
+
+
+.home .box{
+    justify-content: flex-start;
+}
+
+.home .box .content{
+    width:50rem;
+}
+
+.home .box .content h3{
+    font-size: 6rem;
+    color: #fff;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+.home .box .content p{
+    text-shadow: 2px 2px 2px black; 
+    line-height: 2;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.about .content h3{
+    font-size: 5rem;
+    color: #fff;
+    padding-top: .5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about .content p{
+    margin: auto;
+    max-width: 75%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.about .content {
+    text-align: center;
+}
+
+.about .content .card {
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(58, 58, 58, 0.1);
+    padding: 15px;
+    margin-top: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.about .content .card p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.gambar .draw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gambar .draw h3 {
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.gambar .draw .paint {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gambar .draw .paint .small-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 5px;
+}
+
+.mySwiper h3{
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Kontainer Swiper */
+.swipe {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Gaya untuk slider Swiper */
+.mySwiper {
+    width: 100%;
+}
+
+/* Gaya untuk slide dalam slider */
+.swipe .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgba(24, 22, 22, 0.1);
+
+    /* Optional: Menggunakan flexbox untuk menengahkan gambar dan teks */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gaya untuk gambar dalam slide */
+.swipe .swiper-slide img {
+    width: 20%; /* Gambar mengisi lebar slide */
+    max-width: 20%; /* Batas maksimal lebar gambar */
+    height: auto; /* Gambar menyesuaikan tinggi */
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo i{
+    color: red;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    padding: auto;
+    margin-left: 10px;
+}
+
+.footer-links {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    margin-right: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-info{
+    text-align: justify;
+}
+
+.footer-bottom {
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+/* media query */
+@media (max-width:1024){
+    .footer-links a {
+        padding-left: 75px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width:768px){
+    header .icons #bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: red;
+    }
+}
+
+@media(max-width:468px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .about .content .card{
+        max-width: 70%;
+        padding: 10px;
+    }
+}
+
+@media (max-width:425px) {
+    .home .box .content h3{
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+    .home .box .content p{
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+    }
+    .home .box .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Set tinggi agar efek tengah berfungsi */
+    }
+}
